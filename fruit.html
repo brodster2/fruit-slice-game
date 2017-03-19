@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="fruit-style.css">
+        <title>Fruit Slice</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="top-container">
+                <div id="lives-box"></div>
+                <div id="score-box">Score: <span id="score-display">0</span></div>
+            </div>
+
+            <div id="fruits-box">
+                <img id="fruit-image" class="fruits">
+            </div>
+            <div id="instruction-box">Slice those fruits!</div>
+            <div id="start-reset-box">Start Game</div>
+        </div>
+        <div id="game-over-wrapper">
+            <div id="game-over">
+                <h1>Game Over!</h1>
+                <h1>Your score is <span id="game-over-score">0</span> </h1>
+            </div>
+        </div>
+        <audio id="sliceSound">
+            <source src="audio/slicefruit.mp3">
+            <source src="audio/slicefruit.ogg">
+        </audio>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="fruit-logic.js"></script>
+    </body>
+</html>
